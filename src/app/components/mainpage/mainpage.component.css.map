@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["../../../sass/mainpage.scss","../../../sass/_lightthem.scss"],"names":[],"mappings":"AAEA;EACI,kBCHW;EDIX,aCCG;EDAH,OCCQ;;;ADEZ;EACI;;AACA;EACI,kBCRW;;ADUf;EACI,kBCZS;;ADcb;EACI,kBChBU;;;ADmBlB;EACI;EACA;EACA","file":"mainpage.component.css"}

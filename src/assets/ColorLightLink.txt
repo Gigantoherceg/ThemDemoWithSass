@@ -1,0 +1,4 @@
+ColorLight:
+https://colorhunt.co/palette/f0f0f0becfe38aa8cd597fac
+ColorDark:
+https://colorhunt.co/palette/222222333333555555777777

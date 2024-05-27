@@ -1,0 +1,59 @@
+@import "lighttheme";
+$light-theme: (
+    bodybkgcolor: $bodybkgcolor,
+    divbkgcolordark: $divbkgcolordark,
+    divbkgcolormed: $divbkgcolormed,
+    divbkgcolorlight: $divbkgcolorlight,
+    bordercolor: $bordercolor,
+    fontcolor: $fontcolor
+    );
+    
+@import "darktheme";
+$dark-theme: (
+  bodybkgcolor: $bodybkgcolor,
+  divbkgcolordark: $divbkgcolordark,
+  divbkgcolormed: $divbkgcolormed,
+  divbkgcolorlight: $divbkgcolorlight,
+  bordercolor: $bordercolor,
+  fontcolor: $fontcolor,
+  navbkgcolor: $bodybkgcolor
+);
+
+@mixin apply-theme($theme){
+
+    .mainbox {
+        background-color: map-get($theme, bodybkgcolor);
+        color: map-get($theme, fontcolor);
+        height: 100vh;
+    }
+
+    .box {
+        border: 2px solid map-get($theme, bordercolor);
+        .one {
+            background-color: map-get($theme, divbkgcolorlight);
+        }
+        .two {
+            background-color: map-get($theme, divbkgcolormed);
+        }
+        .three {
+            background-color: map-get($theme, divbkgcolordark);
+        };
+    }
+    .box > div {
+        width: 150px;
+        height: 50px;
+        margin: 5px auto;
+    }    
+
+  nav {
+    background-color: map-get($theme, bodybkgcolor); // Navbar háttérszín
+    color: map-get($theme, fontcolor);           // Navbar betűszín
+  }
+
+  .form-check-label {
+    color: map-get($theme, fontcolor);           // Checkbox felirat betűszíne
+  }
+  .form-check-input {
+    background-color: map-get($theme, divbkgcolormed);
+  }
+}
